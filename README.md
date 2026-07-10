@@ -6,7 +6,7 @@ Web developer - Tool Maker - Linux beginner
 
 Im 16 yo developer. I am a backend developer. I'm join tech because of my hobby. I'm still love to learn new things and collaborate with each others.
 
-*   ✉️  You can contact me at [ammaar@gmail.com](mailto:ammaarfauzaan@gmail.com)
+*   ✉️  You can contact me at [ammaarfauzaan@gmail.com](mailto:ammaarfauzaan@gmail.com)
 *   🧠  I'm currently learning NestJS and Backend advanced system
 *   💬  Ask me about I love learning new things about tech
 <p align="left">
