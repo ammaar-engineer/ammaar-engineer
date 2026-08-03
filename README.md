@@ -1,7 +1,7 @@
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) My name is Ammaar
 ================================================================================================================================
 
-Web developer - Tool Maker - Linux beginner
+Web developer - Tool Maker
 -------------------------------------------
 
 Im 16 yo developer. I am a backend developer. I'm join tech because of my hobby. I'm still love to learn new things and collaborate with each others.
