@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ammaar — Profile Sections</title>
+<style>
+  :root{
+    /* ---------- core design tokens ---------- */
+    --bg:#000000;
+    --surface:#050505;
+    --text:#ededed;
+    --muted:#a0a0a0;
+    --border:rgba(255,255,255,0.12);
+    --radius:8px;
+    --radius-pill:9999px;
+    --font:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    /* ---------- neon white glow divider (customize these) ---------- */
+    --neon-color:#ffffff;   /* glow color             */
+    --neon-core:2px;        /* center line thickness  */
+    --neon-blur-sm:6px;     /* inner halo             */
+    --neon-blur:18px;       /* mid halo               */
+    --neon-blur-lg:42px;    /* outer halo             */
+    --neon-opacity:0.9;     /* overall intensity      */
+    --neon-spacing:56px;    /* space above / below    */
+  }
+
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font);
+    font-size:15px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:64px 24px 80px;}
+
+  /* ---------- neon glow divider ---------- */
+  .divider{
+    position:relative;
+    height:var(--neon-core);
+    width:100%;
+    margin:var(--neon-spacing) 0;
+    border-radius:var(--radius-pill);
+    background:linear-gradient(90deg,
+      transparent 0%,
+      var(--neon-color) 50%,
+      transparent 100%);
+    box-shadow:
+      0 0 var(--neon-blur-sm) var(--neon-color),
+      0 0 var(--neon-blur)    var(--neon-color),
+      0 0 var(--neon-blur-lg) var(--neon-color);
+    opacity:var(--neon-opacity);
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .divider{animation:neonPulse 3.6s ease-in-out infinite;}
+    @keyframes neonPulse{
+      0%,100%{opacity:calc(var(--neon-opacity) * .65);}
+      50%    {opacity:var(--neon-opacity);}
+    }
+  }
+
+  /* ---------- section chrome ---------- */
+  .section{position:relative;}
+  .eyebrow{
+    display:flex;align-items:center;gap:10px;
+    margin:0 0 18px;
+    font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+  }
+  .eyebrow::before{
+    content:"";width:8px;height:8px;border-radius:var(--radius-pill);
+    background:var(--text);box-shadow:0 0 10px var(--neon-color);
+  }
+  h2{margin:0 0 22px;font-size:30px;line-height:1.15;font-weight:700;letter-spacing:-.01em;}
+
+  /* ---------- hero ---------- */
+  .hero{text-align:center;padding-top:8px;}
+  .hero h1{
+    margin:0;font-size:clamp(3rem,9vw,4.5rem);line-height:1;font-weight:700;letter-spacing:-.02em;
+    text-shadow:0 0 28px rgba(255,255,255,.28);
+  }
+  .hero .role{
+    margin:16px 0 0;font-size:14px;font-weight:600;letter-spacing:.42em;
+    text-indent:.42em;text-transform:uppercase;color:var(--muted);
+  }
+  .hero .lead{max-width:52ch;margin:22px auto 0;color:var(--muted);}
+
+  /* ---------- social pills ---------- */
+  .social{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:28px;}
+  .social a{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:9px 18px;border:1px solid var(--border);border-radius:var(--radius-pill);
+    background:var(--surface);color:var(--text);text-decoration:none;
+    font-size:13px;font-weight:500;
+    transition:border-color .2s, box-shadow .2s, transform .2s;
+  }
+  .social a:hover{border-color:rgba(255,255,255,.4);box-shadow:0 0 18px rgba(255,255,255,.18);}
+  .social a:focus-visible{outline:2px solid var(--text);outline-offset:3px;}
+  .social a:active{transform:translateY(1px);}
+
+  /* ---------- facts list ---------- */
+  .facts{list-style:none;margin:0;padding:0;display:grid;gap:14px;}
+  .facts li{display:grid;grid-template-columns:130px 1fr;gap:16px;align-items:baseline;}
+  .facts b{color:var(--text);font-weight:600;}
+  .facts span{color:var(--muted);}
+  .facts a{color:var(--text);text-decoration:none;}
+  .facts a:hover{text-decoration:underline;}
+  @media (max-width:520px){.facts li{grid-template-columns:1fr;gap:2px;}}
+
+  /* ---------- chips ---------- */
+  .chips{display:flex;flex-wrap:wrap;gap:10px;}
+  .chip{
+    padding:8px 18px;border:1px solid var(--border);border-radius:var(--radius-pill);
+    background:var(--surface);font-size:13px;font-weight:500;color:var(--text);
+    transition:border-color .2s, box-shadow .2s;
+  }
+  .chip:hover{border-color:rgba(255,255,255,.32);box-shadow:0 0 14px rgba(255,255,255,.12);}
+
+  /* ---------- media cards ---------- */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:640px){.grid2{grid-template-columns:1fr;}}
+  .card{
+    display:block;border:1px solid var(--border);border-radius:var(--radius);
+    background:var(--surface);padding:12px;text-decoration:none;color:inherit;
+    transition:border-color .2s, box-shadow .2s;
+  }
+  .card:hover{border-color:rgba(255,255,255,.3);box-shadow:0 0 24px rgba(255,255,255,.1);}
+  .card img{display:block;width:100%;height:auto;border-radius:4px;}
+
+  footer{text-align:center;color:var(--muted);font-size:13px;}
+  footer a{color:var(--text);text-decoration:none;}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <section class="section hero">
+    <h1>Ammaar</h1>
+    <p class="role">Web Developer</p>
+    <p class="lead">16-year-old web developer building on the web — learning fast, shipping often, and collaborating with people who care about the details.</p>
+    <nav class="social">
+      <a href="https://github.com/ammaar-engineer">GitHub</a>
+      <a href="https://www.threads.net/@amarixdev">Threads</a>
+      <a href="mailto:ammaarfauzaan@gmail.com">Email</a>
+    </nav>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section">
+    <p class="eyebrow">01 — About</p>
+    <h2>About me</h2>
+    <ul class="facts">
+      <li><b>Currently</b><span>Learning new stacks and advanced backend systems.</span></li>
+      <li><b>Ask me about</b><span>Anything tech — I'm always picking up something new.</span></li>
+      <li><b>Reach me</b><span><a href="mailto:ammaarfauzaan@gmail.com">ammaarfauzaan@gmail.com</a></span></li>
+      <li><b>Fun fact</b><span>I started coding because of a hobby and never stopped.</span></li>
+    </ul>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- ============ TECH STACK ============ -->
+  <section class="section">
+    <p class="eyebrow">02 — Tech Stack</p>
+    <h2>What I build with</h2>
+    <div class="chips">
+      <span class="chip">JavaScript</span>
+      <span class="chip">TypeScript</span>
+      <span class="chip">React</span>
+      <span class="chip">Next.js</span>
+      <span class="chip">Node.js</span>
+      <span class="chip">Express</span>
+      <span class="chip">NestJS</span>
+      <span class="chip">Tailwind CSS</span>
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">MySQL</span>
+      <span class="chip">MongoDB</span>
+      <span class="chip">Git</span>
+      <span class="chip">Bash</span>
+      <span class="chip">Linux</span>
+      <span class="chip">Docker</span>
+      <span class="chip">Figma</span>
+      <span class="chip">Neovim</span>
+      <span class="chip">VS Code</span>
+    </div>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- ============ GITHUB STATS ============ -->
+  <section class="section">
+    <p class="eyebrow">03 — GitHub Stats</p>
+    <h2>By the numbers</h2>
+    <div class="grid2">
+      <a class="card" href="https://github.com/ammaar-engineer"><img src="https://github-readme-stats.vercel.app/api?username=ammaar-engineer&show_icons=true&count_private=true&hide_border=true&title_color=ededed&text_color=a0a0a0&icon_color=ffffff&bg_color=000000" alt="Ammaar's GitHub stats" /></a>
+      <a class="card" href="https://github.com/ammaar-engineer"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ammaar-engineer&langs_count=8&layout=compact&hide_border=true&title_color=ededed&text_color=a0a0a0&bg_color=000000&locale=en" alt="Top languages" /></a>
+    </div>
+    <div style="margin-top:16px">
+      <a class="card" href="https://github.com/ammaar-engineer"><img src="https://streak-stats.demolab.com?user=ammaar-engineer&hide_border=true&background=000000&border=000000&stroke=ededed&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=ededed&sideNums=ededed&sideLabels=ededed&dates=a0a0a0" alt="GitHub streak" /></a>
+    </div>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <!-- ============ TOP REPOSITORIES ============ -->
+  <section class="section">
+    <p class="eyebrow">04 — Top Repositories</p>
+    <h2>Selected work</h2>
+    <div class="grid2">
+      <a class="card" href="https://github.com/ammaar-engineer/racer-cli-system"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ammaar-engineer&repo=racer-cli-system&hide_border=true&title_color=ededed&text_color=a0a0a0&icon_color=ffffff&bg_color=000000&locale=en" alt="racer-cli-system" /></a>
+      <a class="card" href="https://github.com/ammaar-engineer/racer-backend-system"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ammaar-engineer&repo=racer-backend-system&hide_border=true&title_color=ededed&text_color=a0a0a0&icon_color=ffffff&bg_color=000000&locale=en" alt="racer-backend-system" /></a>
+    </div>
+  </section>
+
+  <div class="divider" role="separator" aria-hidden="true"></div>
+
+  <footer>Designed and built with care · <a href="https://github.com/ammaar-engineer">@ammaar-engineer</a></footer>
+
+</main>
+</body>
+</html>

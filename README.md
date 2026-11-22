@@ -12,7 +12,9 @@
   <a href="mailto:ammaarfauzaan@gmail.com"><img src="https://img.shields.io/badge/-Email-0a0a0a?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
----
+<div align="center">
+  <img src="./assets/divider.svg" alt="" width="100%" />
+</div>
 
 ### About
 
@@ -21,7 +23,9 @@
 - **Reach me** — [ammaarfauzaan@gmail.com](mailto:ammaarfauzaan@gmail.com).
 - **Fun fact** — I started coding because of a hobby and never stopped.
 
----
+<div align="center">
+  <img src="./assets/divider.svg" alt="" width="100%" />
+</div>
 
 ### Tech Stack
 
@@ -29,7 +33,9 @@
   <img src="./assets/tech-stack.svg" alt="Tech stack: JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, Tailwind CSS, HTML, CSS, MySQL, MongoDB, Git, Bash, Linux, Docker, Figma, Neovim, VS Code" width="100%" />
 </div>
 
----
+<div align="center">
+  <img src="./assets/divider.svg" alt="" width="100%" />
+</div>
 
 ### GitHub Stats
 
@@ -42,7 +48,9 @@
   <img src="https://streak-stats.demolab.com?user=ammaar-engineer&hide_border=true&background=000000&border=000000&stroke=ededed&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=ededed&sideNums=ededed&sideLabels=ededed&dates=a0a0a0" alt="GitHub streak" />
 </div>
 
----
+<div align="center">
+  <img src="./assets/divider.svg" alt="" width="100%" />
+</div>
 
 ### Top Repositories
 
@@ -55,6 +63,8 @@
   </a>
 </div>
 
----
+<div align="center">
+  <img src="./assets/divider.svg" alt="" width="100%" />
+</div>
 
 <p align="center"><sub>Designed and built with care · <a href="https://github.com/ammaar-engineer">@ammaar-engineer</a></sub></p>
