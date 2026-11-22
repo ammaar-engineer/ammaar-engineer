@@ -1,11 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0891b2&height=200&section=header&text=Ammaar&fontSize=70&fontColor=ffffff&fontAlignY=35&desc=Web%20Developer&descAlignY=58&descSize=20" alt="Ammaar header" />
-</div>
-
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=0891B2&center=true&vCenter=true&width=520&lines=Web+Developer;Always+curious+and+learning;16+year+old+developer;Love+to+collaborate+with+others" alt="Typing SVG" />
-  </a>
+  <img src="./assets/hero.svg" alt="Ammaar — Web Developer" width="100%" />
 </div>
 
 <p align="center">
