@@ -16,7 +16,7 @@
 
 ### 🧑‍💻 About Me
 
-- 🔭 &nbsp;I'm currently learning **NestJS** and advanced backend systems
+- 🔭 &nbsp;I'm currently learning **New stacks** and advanced backend systems
 - 💬 &nbsp;Ask me about anything tech — I love learning new things
 - 📫 &nbsp;Reach me at **ammaarfauzaan@gmail.com**
 - ⚡ &nbsp;Fun fact: I started coding because of a hobby and never stopped
