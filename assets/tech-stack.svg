@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="142" viewBox="0 0 1000 142" role="img" aria-label="Tech stack: JavaScript, TypeScript, React, Next.js, Node.js, Express, NestJS, Tailwind CSS, HTML, CSS, MySQL, MongoDB, Git, Bash, Linux, Docker, Figma, Neovim, VS Code">
+  <rect width="1000" height="142" rx="8" fill="#000000"/>
+  <rect x="0.75" y="0.75" width="998.5" height="140.5" rx="8" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+  <rect x="50.0" y="30" width="109" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="104.5" y="51.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">JavaScript</text>
+  <rect x="169.0" y="30" width="109" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="223.5" y="51.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">TypeScript</text>
+  <rect x="288.0" y="30" width="72" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="324.0" y="51.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">React</text>
+  <rect x="370.0" y="30" width="87" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="413.5" y="51.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">Next.js</text>
+  <rect x="467.0" y="30" width="87" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="510.5" y="51.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">Node.js</text>
+  <rect x="564.0" y="30" width="87" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="607.5" y="51.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">Express</text>
+  <rect x="661.0" y="30" width="80" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="701.0" y="51.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">NestJS</text>
+  <rect x="751.0" y="30" width="124" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="813.0" y="51.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">Tailwind CSS</text>
+  <rect x="885.0" y="30" width="65" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="917.5" y="51.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">HTML</text>
+  <rect x="83.5" y="78" width="64" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="115.5" y="99.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">CSS</text>
+  <rect x="157.5" y="78" width="72" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="193.5" y="99.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">MySQL</text>
+  <rect x="239.5" y="78" width="87" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="283.0" y="99.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">MongoDB</text>
+  <rect x="336.5" y="78" width="64" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="368.5" y="99.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">Git</text>
+  <rect x="410.5" y="78" width="65" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="443.0" y="99.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">Bash</text>
+  <rect x="485.5" y="78" width="72" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="521.5" y="99.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">Linux</text>
+  <rect x="567.5" y="78" width="80" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="607.5" y="99.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">Docker</text>
+  <rect x="657.5" y="78" width="72" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="693.5" y="99.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">Figma</text>
+  <rect x="739.5" y="78" width="80" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="779.5" y="99.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">Neovim</text>
+  <rect x="829.5" y="78" width="87" height="34" rx="17.0" fill="#050505" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="873.0" y="99.5" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'" font-size="13" font-weight="500" fill="#ededed">VS Code</text>
+</svg>

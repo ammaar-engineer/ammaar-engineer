@@ -5,9 +5,9 @@
     text { font-family: 'ChakraPetch', 'Segoe UI', Helvetica, Arial, sans-serif; }
   </style>
   <defs>
-    <radialGradient id="bg" cx="50%" cy="0%" r="90%"><stop offset="0" stop-color="#0e1c27"/><stop offset="0.6" stop-color="#060a0f"/><stop offset="1" stop-color="#060a0f"/></radialGradient>
+    <radialGradient id="bg" cx="50%" cy="0%" r="90%"><stop offset="0" stop-color="#101010"/><stop offset="0.6" stop-color="#000000"/><stop offset="1" stop-color="#000000"/></radialGradient>
     <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/><stop offset="1" stop-color="#ffffff" stop-opacity="1"/></linearGradient>
-    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d151d" stop-opacity="0.88"/><stop offset="1" stop-color="#070b10" stop-opacity="0.93"/></linearGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b0b0b" stop-opacity="0.9"/><stop offset="1" stop-color="#030303" stop-opacity="0.94"/></linearGradient>
     <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.5"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
   </defs>
   <rect width="1000" height="300" fill="url(#bg)"/>
@@ -182,8 +182,8 @@
     </rect>
   </g>
   <rect x="252" y="78" width="496" height="150" rx="8" fill="#000000" opacity="0.5"/>
-  <rect x="252" y="78" width="496" height="150" rx="8" fill="url(#plate)" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5"/>
+  <rect x="252" y="78" width="496" height="150" rx="8" fill="url(#plate)" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"/>
   <rect x="252" y="78.75" width="496" height="2" rx="1" fill="url(#edge)" opacity="0.7"/>
   <text x="500" y="162" text-anchor="middle" font-size="72" font-weight="700" fill="#ffffff" letter-spacing="2">Ammaar</text>
-  <text x="500" y="200" text-anchor="middle" font-size="16" font-weight="600" letter-spacing="9" fill="#cfeaf3">WEB DEVELOPER</text>
+  <text x="500" y="200" text-anchor="middle" font-size="16" font-weight="600" letter-spacing="9" fill="#a0a0a0">WEB DEVELOPER</text>
 </svg>
