@@ -1,0 +1,171 @@
+<title>Ammaar Wave Banner</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #060a0f;
+    --bg-glow: #0e1c27;
+    --fg: #ffffff;
+    --muted: #cfeaf3;
+    --plate: rgba(9, 15, 21, 0.9);
+    --plate-border: rgba(255, 255, 255, 0.22);
+    --plate-edge: rgba(255, 255, 255, 0.5);
+    --bar-top: #ffffff;
+    --bar-bottom: rgba(255, 255, 255, 0.16);
+    --font-display: "Chakra Petch", system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-display);
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  .stage {
+    position: relative;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    background:
+      radial-gradient(120% 90% at 50% 0%, var(--bg-glow) 0%, transparent 60%),
+      var(--bg);
+  }
+
+  .stage::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(120% 120% at 50% 50%, transparent 55%, rgba(0,0,0,0.55) 100%);
+  }
+
+  /* ---- equalizer built from CSS boxes ---- */
+  .equalizer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 9px;
+    overflow: hidden;
+  }
+
+  .bar {
+    flex: 0 0 15px;
+    width: 15px;
+    height: calc(var(--h) * 100%);
+    border-radius: 2px;
+    background: linear-gradient(to top, var(--bar-bottom), var(--bar-top));
+    transform-origin: bottom center;
+    transform: scaleY(0.4);
+    animation: wave var(--d, 1.7s) ease-in-out infinite;
+    animation-delay: calc(var(--i) * -0.06s);
+    will-change: transform;
+  }
+
+  @keyframes wave {
+    0%, 100% { transform: scaleY(0.22); }
+    50%      { transform: scaleY(1); }
+  }
+
+  /* ---- sharp box behind the text ---- */
+  .plate {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: clamp(1.4rem, 4vw, 2.4rem) clamp(2rem, 7vw, 4.5rem);
+    border-radius: 8px;
+    background: var(--plate);
+    border: 1.5px solid var(--plate-border);
+    box-shadow:
+      inset 0 1px 0 var(--plate-edge),
+      0 24px 70px rgba(0,0,0,0.6);
+  }
+
+  .name {
+    margin: 0;
+    font-weight: 700;
+    font-size: clamp(3rem, 12vw, 6rem);
+    line-height: 0.98;
+    letter-spacing: 0.02em;
+    color: var(--fg);
+    text-shadow: 0 0 30px rgba(255,255,255,0.18);
+    text-wrap: balance;
+  }
+
+  .role {
+    margin: clamp(0.55rem, 1.5vw, 0.9rem) 0 0;
+    font-weight: 600;
+    font-size: clamp(0.72rem, 2.3vw, 0.95rem);
+    letter-spacing: 0.42em;
+    text-indent: 0.42em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bar { animation: none; transform: scaleY(0.6); }
+  }
+</style>
+
+<main class="stage">
+  <div class="equalizer" aria-hidden="true">
+        <span class="bar" style="--i:0;--h:0.200;--d:1.72s"></span>
+        <span class="bar" style="--i:1;--h:0.200;--d:1.69s"></span>
+        <span class="bar" style="--i:2;--h:0.200;--d:1.73s"></span>
+        <span class="bar" style="--i:3;--h:0.200;--d:1.7s"></span>
+        <span class="bar" style="--i:4;--h:0.200;--d:1.82s"></span>
+        <span class="bar" style="--i:5;--h:0.200;--d:1.62s"></span>
+        <span class="bar" style="--i:6;--h:0.200;--d:1.82s"></span>
+        <span class="bar" style="--i:7;--h:0.275;--d:1.52s"></span>
+        <span class="bar" style="--i:8;--h:0.382;--d:1.89s"></span>
+        <span class="bar" style="--i:9;--h:0.372;--d:1.75s"></span>
+        <span class="bar" style="--i:10;--h:0.299;--d:1.51s"></span>
+        <span class="bar" style="--i:11;--h:0.446;--d:1.52s"></span>
+        <span class="bar" style="--i:12;--h:0.387;--d:1.6s"></span>
+        <span class="bar" style="--i:13;--h:0.368;--d:1.69s"></span>
+        <span class="bar" style="--i:14;--h:0.558;--d:1.84s"></span>
+        <span class="bar" style="--i:15;--h:0.631;--d:1.76s"></span>
+        <span class="bar" style="--i:16;--h:0.660;--d:1.76s"></span>
+        <span class="bar" style="--i:17;--h:0.672;--d:1.61s"></span>
+        <span class="bar" style="--i:18;--h:0.720;--d:1.9s"></span>
+        <span class="bar" style="--i:19;--h:0.720;--d:1.78s"></span>
+        <span class="bar" style="--i:20;--h:0.654;--d:1.59s"></span>
+        <span class="bar" style="--i:21;--h:0.645;--d:1.53s"></span>
+        <span class="bar" style="--i:22;--h:0.720;--d:1.66s"></span>
+        <span class="bar" style="--i:23;--h:0.720;--d:1.65s"></span>
+        <span class="bar" style="--i:24;--h:0.720;--d:1.84s"></span>
+        <span class="bar" style="--i:25;--h:0.461;--d:1.58s"></span>
+        <span class="bar" style="--i:26;--h:0.720;--d:1.69s"></span>
+        <span class="bar" style="--i:27;--h:0.720;--d:1.66s"></span>
+        <span class="bar" style="--i:28;--h:0.416;--d:1.75s"></span>
+        <span class="bar" style="--i:29;--h:0.635;--d:1.61s"></span>
+        <span class="bar" style="--i:30;--h:0.353;--d:1.63s"></span>
+        <span class="bar" style="--i:31;--h:0.573;--d:1.8s"></span>
+        <span class="bar" style="--i:32;--h:0.289;--d:1.6s"></span>
+        <span class="bar" style="--i:33;--h:0.248;--d:1.52s"></span>
+        <span class="bar" style="--i:34;--h:0.346;--d:1.57s"></span>
+        <span class="bar" style="--i:35;--h:0.253;--d:1.68s"></span>
+        <span class="bar" style="--i:36;--h:0.200;--d:1.79s"></span>
+        <span class="bar" style="--i:37;--h:0.200;--d:1.76s"></span>
+        <span class="bar" style="--i:38;--h:0.200;--d:1.67s"></span>
+        <span class="bar" style="--i:39;--h:0.200;--d:1.61s"></span>
+        <span class="bar" style="--i:40;--h:0.200;--d:1.82s"></span>
+        <span class="bar" style="--i:41;--h:0.200;--d:1.85s"></span>
+  </div>
+  <div class="plate">
+    <h1 class="name">Ammaar</h1>
+    <p class="role">Web Developer</p>
+  </div>
+</main>
